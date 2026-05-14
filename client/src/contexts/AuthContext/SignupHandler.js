@@ -1,5 +1,7 @@
+import { API_BASE_URL } from "../../config/apiBaseUrl";
+
 const SignupHandler = async (name, email, password, userRole) => {
-  const apiUrl = "http://localhost:4500/api/signup";
+  const apiUrl = `${API_BASE_URL}/api/signup`;
 
   try {
     const response = await fetch(apiUrl, {
@@ -15,20 +17,19 @@ const SignupHandler = async (name, email, password, userRole) => {
       try {
         const errorResponse = await response.json();
         errorMessage = errorResponse.message || errorMessage;
-      } catch (parseError) {
+      } catch {
         console.warn("Could not parse error response as JSON.");
       }
       throw new Error(errorMessage);
     }
 
-   // If the response is okay, parse and return it
-  const result = await response.json();
-  return result.message
-  
+    // If the response is okay, parse and return it
+    const result = await response.json();
+    return result.message;
   } catch (error) {
     console.error(`Login Error ${apiUrl}`, error);
     throw error;
   }
 };
 
-export default SignupHandler
+export default SignupHandler;
