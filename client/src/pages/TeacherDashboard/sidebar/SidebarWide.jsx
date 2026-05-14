@@ -1,11 +1,5 @@
-import React from 'react'
-
 const sidebarWide = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default sidebarWide
+export default sidebarWide;

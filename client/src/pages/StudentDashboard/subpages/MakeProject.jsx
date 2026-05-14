@@ -1,11 +1,5 @@
-import React from 'react'
-
 const MakeProject = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default MakeProject
+export default MakeProject;

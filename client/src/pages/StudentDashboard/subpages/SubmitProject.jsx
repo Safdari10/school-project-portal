@@ -1,11 +1,5 @@
-import React from 'react'
-
 const SubmitProject = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default SubmitProject
+export default SubmitProject;

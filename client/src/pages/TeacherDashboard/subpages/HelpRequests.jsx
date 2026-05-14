@@ -1,11 +1,5 @@
-import React from 'react'
-
 const HelpRequests = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default HelpRequests
+export default HelpRequests;

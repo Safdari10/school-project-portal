@@ -1,11 +1,5 @@
-import React from 'react'
-
 const ProjectSubmissions = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default ProjectSubmissions
+export default ProjectSubmissions;

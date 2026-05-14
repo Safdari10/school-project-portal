@@ -1,11 +1,5 @@
-import React from 'react'
-
 const StudentProfiles = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default StudentProfiles
+export default StudentProfiles;

@@ -1,11 +1,5 @@
-import React from 'react'
-
 const ProgressTracker = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default ProgressTracker
+export default ProgressTracker;
