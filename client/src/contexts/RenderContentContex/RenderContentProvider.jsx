@@ -1,24 +1,18 @@
-import { createContext, useContext, useState } from "react";
-
-// student sub-page imports
+import { useState } from "react";
 import LearningObjectives from "../../pages/StudentDashboard/subpages/LearningObjectives";
 import Instructions from "../../pages/StudentDashboard/subpages/Instructions";
 import VideoTutorial from "../../pages/StudentDashboard/subpages/VideoTutorial";
 import MakeProject from "../../pages/StudentDashboard/subpages/MakeProject";
 import SubmitProject from "../../pages/StudentDashboard/subpages/SubmitProject";
-
-// teacher sub-page imports
 import ProgressTracker from "../../pages/TeacherDashboard/subpages/ProgressTracker";
 import StudentProfiles from "../../pages/TeacherDashboard/subpages/StudentProfiles";
 import HelpRequests from "../../pages/TeacherDashboard/subpages/HelpRequests";
 import ProjectSubmissions from "../../pages/TeacherDashboard/subpages/ProjectSubmissions";
-
-// Initialize the context
-const RenderContentContex = createContext();
+import { RenderContentContex } from "./RenderContentContex";
 
 export const RenderContentProvider = ({ dashboardType, children }) => {
   const [activeLink, setActiveLink] = useState(
-    dashboardType === "student" ? "learning-objectives" : "progress-tracker"
+    dashboardType === "student" ? "learning-objectives" : "progress-tracker",
   );
 
   const renderContent = () => {
@@ -54,10 +48,10 @@ export const RenderContentProvider = ({ dashboardType, children }) => {
   };
 
   return (
-    <RenderContentContex.Provider value={{ activeLink, setActiveLink, renderContent }}>
+    <RenderContentContex.Provider
+      value={{ activeLink, setActiveLink, renderContent }}
+    >
       {children}
     </RenderContentContex.Provider>
   );
 };
-
-export const useRenderContent = () => useContext(RenderContentContex);

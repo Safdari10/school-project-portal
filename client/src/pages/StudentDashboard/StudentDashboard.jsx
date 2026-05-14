@@ -1,14 +1,12 @@
 import styles from "./StudentDashboard.module.css";
 import { useState } from "react";
-import { useRenderContent } from "../../contexts/RenderContentContex/RenderContentContex.jsx";
+import { useRenderContent } from "../../contexts/RenderContentContex/RenderContentContex";
 import Header from "./component/Header.jsx";
 import SidebarWide from "./sidebar/SidebarWide.jsx";
 import Sidebar from "./sidebar/Sidebar.jsx";
 import Arrow from "../../assets/arrowLeft.png";
 
-
 const StudentDashboard = () => {
-  
   const [isWideSidebar, setIsWideSidebar] = useState(true);
   const { renderContent } = useRenderContent();
 
@@ -27,7 +25,8 @@ const StudentDashboard = () => {
           <div
             className={
               isWideSidebar ? styles.arrowContainerWide : styles.arrowContainer
-            }>
+            }
+          >
             <img
               src={Arrow}
               alt="sidebar slider"
@@ -42,8 +41,9 @@ const StudentDashboard = () => {
             isWideSidebar
               ? styles.contentContainerWide
               : styles.contentContainer
-          }>
-            {renderContent()}
+          }
+        >
+          {renderContent()}
         </div>
       </main>
       <div className={styles.footerContainer}>

@@ -27,13 +27,16 @@ const Signup = ({ userRole }) => {
       setPassword("");
       setConfirmPassword("");
       setErrorMessage(successMessage);
-    }catch (error) {
-   setErrorMessage(error.message)
+    } catch (error) {
+      setErrorMessage(error.message);
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className={styles.form}>
+    <form
+      onSubmit={handleSubmit}
+      className={styles.form}
+    >
       <input
         className={styles.input}
         type="text"
@@ -71,7 +74,10 @@ const Signup = ({ userRole }) => {
         required
       />
       {errorMessage && <div className={styles.error}>{errorMessage}</div>}
-      <button type="submit" className={styles.submit}>
+      <button
+        type="submit"
+        className={styles.submit}
+      >
         SIGN UP
       </button>
     </form>

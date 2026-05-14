@@ -10,7 +10,7 @@ import { useRenderContent } from "../../../contexts/RenderContentContex/RenderCo
 const SidebarWide = ({ isWideSidebar }) => {
   const navigate = useNavigate();
   const { activeLink, setActiveLink } = useRenderContent();
-  
+
   const settingItem = [
     { name: "Profile", icon: Profile },
     { name: "Settings", icon: Setting },
@@ -55,7 +55,8 @@ const SidebarWide = ({ isWideSidebar }) => {
             <div
               key={index}
               className={styles.settingItem}
-              onClick={() => handleNavigate(item.name)}>
+              onClick={() => handleNavigate(item.name)}
+            >
               <img
                 src={item.icon}
                 alt={`${item.name} icon`}
