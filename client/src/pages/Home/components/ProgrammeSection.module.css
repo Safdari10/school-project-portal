@@ -1,0 +1,84 @@
+.programmeSection {
+  padding: 40px 60px;
+  background: #ffffff;
+}
+
+.programmeSection h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+  color: #2f2f2f;
+}
+
+.programmeButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.programmeButton {
+  border: 1px solid #00aeef;
+  background: transparent;
+  color: #00aeef;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.programmeButton:hover {
+  background: #00aeef;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.programmeDescription {
+  margin-top: 24px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #d8d8d8;
+  border-radius: 12px;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.enhance-key-competencies {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.enhance-key-competencies h3 {
+  margin-bottom: 10px;
+}
+
+.enhance-key-competencies ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.enhance-key-competencies li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .programmeSection {
+    padding: 30px 20px;
+  }
+
+  .programmeSection h2 {
+    font-size: 1.5rem;
+  }
+
+  .programmeButtons {
+    flex-direction: column;
+  }
+
+  .programmeButton {
+    width: 100%;
+  }
+}

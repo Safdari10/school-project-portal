@@ -4,6 +4,7 @@ import LoginSignup from "../Login-Signup/LoginSingup";
 import YoungMinds from "./components/YoungMinds";
 import WhatWeOffer from "./components/WhatWeOffer";
 import SkillsSection from "./components/SkillsSection";
+import ProgrammeSection from "./components/ProgrammeSection";
 import { useState } from "react";
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <YoungMinds />
       <WhatWeOffer />
       <SkillsSection />
+      <ProgrammeSection />
     </div>
   );
 };
