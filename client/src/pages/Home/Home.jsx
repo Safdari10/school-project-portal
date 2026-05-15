@@ -2,6 +2,7 @@ import styles from "./Home.module.css";
 import Header from "./components/header";
 import LoginSignup from "../Login-Signup/LoginSingup";
 import YoungMinds from "./components/YoungMinds";
+import WhatWeOffer from "./components/WhatWeOffer";
 import { useState } from "react";
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <Header onClick={toggleLogin} />
       {isOpen && <LoginSignup onClose={toggleLogin} />}
       <YoungMinds />
+      <WhatWeOffer />
     </div>
   );
 };
