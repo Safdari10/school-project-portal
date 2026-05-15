@@ -1,0 +1,107 @@
+/* Hero section with background image */
+.yms {
+  position: relative;
+  height: 300px; /* Define the height of the hero section */
+  background-image: url('../../../assets/Home/hero.png'); /* Set hero image as background */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center right; /* Align the image to the right */
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center; /* Center the text vertically */
+  padding-left: 50px; /* Far left alignment for the text */
+}
+
+/* Text container */
+.content {
+  max-width: 600px; /* Restrict width for text */
+  color: #3a3838; /*  grey text color */
+}
+
+/* Headline styling */
+.content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+/* Highlight the word "future" in blue */
+.highlight {
+  color: #00aeef; /* Blue color for the word "future" */
+}
+
+/* Subtitle text */
+.content h4 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #3a3838; /* Light grey for subtitle */
+}
+
+/* Buttons container */
+.buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px;
+}
+
+/* Button base styling */
+.primaryBtn,
+.secondaryBtn {
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth hover effects */
+  border-radius: 4px;
+}
+
+/* Learn More button */
+.primaryBtn {
+  background-color: transparent;
+  color: #00aeef;
+  border-color: #00aeef;
+}
+
+.primaryBtn:hover {
+  background-color: #00aeef;
+  color: white;
+}
+
+/* Sign Up button */
+.secondaryBtn {
+  background-color: #ff69b4;
+  color: white;
+  border-color: #ff69b4;
+}
+
+.secondaryBtn:hover {
+  background-color: #ff4a94;
+}
+
+/* Subscription text under buttons */
+.subscriptionText {
+  font-size: 0.8rem;
+  color: #d3d3d3; /* Light grey for subscription text */
+  margin-top: 5px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .yms {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0;
+    padding: 20px;
+    height: auto;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px; /* Stack buttons vertically */
+  }
+}
