@@ -1,20 +1,23 @@
 /* Hero section with background image */
 .yms {
   position: relative;
-  height: 300px; /* Define the height of the hero section */
-  background-image: url('../../../assets/Home/hero.png'); /* Set hero image as background */
-  background-size: cover; /* Ensure the image covers the entire container */
-  background-position: center right; /* Align the image to the right */
+  height: 300px;
+  background-image: url("../../../assets/Home/hero.png");
+  background-size: cover;
+  background-position: left;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center; /* Center the text vertically */
-  padding-left: 50px; /* Far left alignment for the text */
+  align-items: center;
+  padding-left: 30px;
 }
 
 /* Text container */
 .content {
-  max-width: 600px; /* Restrict width for text */
-  color: #3a3838; /*  grey text color */
+  max-width: 450px;
+  color: #3a3838;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 30px 25px;
+  border-radius: 10px;
 }
 
 /* Headline styling */
@@ -27,20 +30,20 @@
 
 /* Highlight the word "future" in blue */
 .highlight {
-  color: #00aeef; /* Blue color for the word "future" */
+  color: #00aeef;
 }
 
 /* Subtitle text */
 .content h4 {
   font-size: 1rem;
   margin-bottom: 20px;
-  color: #3a3838; /* Light grey for subtitle */
+  color: #3a3838;
 }
 
 /* Buttons container */
 .buttons {
   display: flex;
-  gap: 10px; /* Space between buttons */
+  gap: 10px;
   margin-top: 10px;
 }
 
@@ -52,7 +55,10 @@
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: bold;
-  transition: background-color 0.3s, color 0.3s, border 0.3s; /* Smooth hover effects */
+  transition:
+    background-color 0.3s,
+    color 0.3s,
+    border 0.3s;
   border-radius: 4px;
 }
 
@@ -82,11 +88,22 @@
 /* Subscription text under buttons */
 .subscriptionText {
   font-size: 0.8rem;
-  color: #d3d3d3; /* Light grey for subscription text */
+  color: #666666;
   margin-top: 5px;
 }
 
 /* Responsive adjustments for smaller screens */
+
+@media (max-width: 1024px) {
+  .yms {
+    background-position: center;
+  }
+
+  .content {
+    max-width: 500px;
+  }
+}
+
 @media (max-width: 768px) {
   .yms {
     flex-direction: column;
@@ -94,14 +111,19 @@
     padding-left: 0;
     padding: 20px;
     height: auto;
+    background-image: none;
   }
 
   .content {
     max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px 20px;
+    border-radius: 12px;
+    margin: 20px auto;
   }
 
   .buttons {
     flex-direction: column;
-    gap: 10px; /* Stack buttons vertically */
+    gap: 10px;
   }
 }
