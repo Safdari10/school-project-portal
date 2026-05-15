@@ -5,6 +5,7 @@ import YoungMinds from "./components/YoungMinds";
 import WhatWeOffer from "./components/WhatWeOffer";
 import SkillsSection from "./components/SkillsSection";
 import ProgrammeSection from "./components/ProgrammeSection";
+import CallToAction from "./components/CallToAction";
 import { useState } from "react";
 
 const Home = () => {
@@ -21,6 +22,7 @@ const Home = () => {
       <WhatWeOffer />
       <SkillsSection />
       <ProgrammeSection />
+      <CallToAction />
     </div>
   );
 };
