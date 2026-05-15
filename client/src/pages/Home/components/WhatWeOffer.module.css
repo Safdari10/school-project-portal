@@ -69,6 +69,11 @@
 }
 
 /* Laptop container */
+.laptopContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .laptopContainer img {
   max-width: 100%;
   height: auto;
@@ -76,6 +81,16 @@
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+  .content {
+    gap: 24px;
+  }
+
+  .laptopContainer img {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
@@ -88,6 +103,10 @@
 
   .laptopContainer {
     margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .laptopContainer img {
     margin-left: 0;
   }
 }
