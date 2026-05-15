@@ -1,0 +1,42 @@
+footer {
+  background-color: #b2e4fa;
+  height: 39vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.footerList {
+  margin: 30px;
+  text-align: left;
+}
+
+.footerList p {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #7d7979;
+  font-size: small;
+  text-align: left;
+}
+
+.footerList ul {
+  list-style: none;
+  font-weight: bold;
+  color: #7d7979;
+  font-size: small;
+  text-align: left;
+}
+
+.footerList ul li {
+  text-align: left;
+}
+
+.levelUp {
+  width: 20%;
+  margin: 30px;
+  font-weight: bold;
+  color: #7d7979;
+  font-size: small;
+  text-align: left;
+}

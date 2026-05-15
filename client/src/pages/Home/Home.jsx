@@ -1,11 +1,12 @@
 import styles from "./Home.module.css";
-import Header from "./components/header";
+import Header from "./components/Header";
 import LoginSignup from "../Login-Signup/LoginSingup";
 import YoungMinds from "./components/YoungMinds";
 import WhatWeOffer from "./components/WhatWeOffer";
 import SkillsSection from "./components/SkillsSection";
 import ProgrammeSection from "./components/ProgrammeSection";
 import CallToAction from "./components/CallToAction";
+import Footer from "../../sharedComponents/BlueFooter";
 import { useState } from "react";
 
 const Home = () => {
@@ -23,6 +24,7 @@ const Home = () => {
       <SkillsSection />
       <ProgrammeSection />
       <CallToAction />
+      <Footer />
     </div>
   );
 };
